@@ -1,0 +1,14 @@
+[package]
+name = "which"
+version = "2.20.0"
+edition = "2021"
+description = "Rust rewrite of GNU which 2.20 (GnuWin32 Windows port)"
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[[bin]]
+name = "which"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
